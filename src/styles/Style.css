@@ -1,0 +1,546 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.menu {
+  background-color: #133342;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu ul li a:hover {
+  color: #ddd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  padding: 15px;
+  border-radius: 12px;
+  background: white;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Efeito de flutuar ao passar o mouse */
+}
+
+.card h3 {
+  color: #000000;
+  /* Azul institucional */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card p {
+  color: #666;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background: #133342;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #444;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+p {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Para garantir que o conteúdo ocupe a altura toda */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* O container principal vai expandir */
+.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Estilo do footer - CORRIGIDO */
+.footer {
+  background-color: #133342;
+  color: white;
+  padding: 30px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  /* Espaço entre o texto e os links */
+  align-items: center;
+  /* Alinha verticalmente */
+  flex-wrap: wrap;
+  /* Para quebrar em mobile */
+  gap: 20px;
+}
+
+.footer-content p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Estilo para os links sociais */
+.social {
+  display: flex;
+  gap: 20px;
+  /* Espaço entre os links */
+}
+
+.social a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+  padding: 5px 10px;
+}
+
+.social a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Responsivo - para telas pequenas */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    /* Empilha os elementos */
+    text-align: center;
+    gap: 15px;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}
+
+/* Responsivo */
+@media(max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Estilos adicionais para o projeto vocacional */
+
+.hero {
+  background: linear-gradient(135deg, #133342 0%, #2c6bb3 100%);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.hero h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  color: #ffd966;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-box {
+  background: #f0f4f8;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.info-box h2 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.info-box button {
+  background: #133342;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.info-box button:hover {
+  background: #133342;
+}
+
+.caracteristicas {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.caracteristicas li {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.caracteristicas li:before {
+  content: "✓";
+  color: #1a4a8e;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.social a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: white;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .info-box {
+    padding: 25px;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
+
+/* ===== ESTILOS DO CARROSSEL - CORRIGIDO ===== */
+.carousel-wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vocational-carousel {
+  width: 100%;
+}
+
+/* Ajuste para os slides */
+.vocational-carousel .slide {
+  background: transparent;
+  position: relative;
+}
+
+/* Estilo das imagens */
+.vocational-carousel .slide img {
+  width: 100% !important;
+  height: 350px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Estilo das legendas - CORRIGIDO E CENTRALIZADO */
+.vocational-carousel .slide .legend {
+  position: absolute !important;
+  bottom: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: linear-gradient(90deg, #133342, rgba(44, 107, 179, 0.9)) !important;
+  color: white !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  width: auto !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+  z-index: 10 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Estilo das setas de navegação */
+.vocational-carousel .control-arrow {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  opacity: 0.7 !important;
+  transition: opacity 0.3s !important;
+  z-index: 10 !important;
+}
+
+.vocational-carousel .control-arrow:hover {
+  background: #133342 !important;
+  opacity: 1 !important;
+}
+
+.vocational-carousel .control-arrow:before {
+  font-size: 20px !important;
+}
+
+/* Indicadores (pontinhos) */
+.vocational-carousel .control-dots {
+  position: absolute !important;
+  bottom: 10px !important;
+  z-index: 10 !important;
+  text-align: center !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.vocational-carousel .control-dots .dot {
+  background: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: none !important;
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 4px !important;
+  opacity: 0.7 !important;
+}
+
+.vocational-carousel .control-dots .dot.selected {
+  background: #133342 !important;
+  opacity: 1 !important;
+}
+
+/* Remove altura dinâmica que causa desalinhamento */
+.vocational-carousel .carousel-slider {
+  overflow: hidden !important;
+}
+
+.vocational-carousel .slider-wrapper {
+  overflow: hidden !important;
+}
+
+.vocational-carousel .thumbs-wrapper {
+  display: none !important;
+}
+
+/* ===== SEMENTE DE LUZ ===== */
+.semente-luz-container {
+  background: linear-gradient(135deg, #fffde7 0%, #f0f4f8 100%);
+  border-left: 5px solid #ffd966;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.semente-luz-container:hover {
+  transform: translateY(-3px);
+}
+
+.semente-icone {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.semente-titulo {
+  color: #416ba7;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.semente-texto {
+  color: #000000;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  .carousel-wrapper {
+    max-width: 800px;
+  }
+
+  .vocational-carousel .slide img {
+    height: 300px !important;
+  }
+
+  .vocational-carousel .slide .legend {
+    font-size: 0.85rem !important;
+    padding: 8px 16px !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 8px;
+  }
+
+  .vocational-carousel .slide img {
+    height: 250px !important;
+  }
+
+  .vocational-carousel .slide .legend {
+    font-size: 0.75rem !important;
+    padding: 6px 12px !important;
+    bottom: 15px !important;
+    white-space: nowrap !important;
+  }
+
+  .vocational-carousel .control-arrow {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .vocational-carousel .slide img {
+    height: 180px !important;
+  }
+
+  .vocational-carousel .slide .legend {
+    font-size: 0.65rem !important;
+    padding: 4px 10px !important;
+    bottom: 10px !important;
+    white-space: normal !important;
+    width: 90% !important;
+  }
+}
