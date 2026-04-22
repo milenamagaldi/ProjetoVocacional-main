@@ -23,6 +23,7 @@ function Menu() {
     <nav className="menu">
       <ul>
         <li><Link to="/">Início</Link></li>
+        <li><Link to="/discernimento">Discernimento</Link></li> {/* Novo link adicionado */}
         <li><Link to="/vocacoes">Vocações</Link></li>
         <li><Link to="/sav">SAV</Link></li>
         <li><Link to="/contato">Fale Conosco</Link></li>
